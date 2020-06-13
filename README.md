@@ -23,7 +23,13 @@ $ sudo X -version
 
 
 
-# GUI is often reffered to Desktop environment. Ex- Gnome, KDE, Unity, Cinnamon, Mate
+GUI is often reffered to Desktop environment. Ex - Gnome, KDE, Unity, Cinnamon, Mate
 
-# Red Hat Enterprise Linux is a commercial Linux distro
+Red Hat Enterprise Linux is a commercial Linux distro. Others distro are Ubuntu, Fedora, CentOS etc
+
+Embeded system is combo of hardware and software working together. Ex - Android, Raspberry pi...
+
+
+
+
 
