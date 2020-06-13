@@ -95,7 +95,157 @@ cloud_user@sorowar0073c:~/Desktop$
 
 
 
- 
+# Install and remove "htop" utility in Red Hat/CentOS machine:
+
+[cloud_user@ip-10-0-1-10 ~]$ ls
+
+htop-2.2.0-3.el7.x86_64.rpm
+
+[cloud_user@ip-10-0-1-10 ~]$ sudo rpm -i htop-2.2.0-3.el7.x86_64.rpm 
+
+[sudo] password for cloud_user: 
+warning: htop-2.2.0-3.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID 352c64e5: NOKEY
+
+[cloud_user@ip-10-0-1-10 ~]$ htop
+
+hit "q" to come out of htop
+
+
+[cloud_user@ip-10-0-1-10 ~]$ sudo rpm -e htop
+
+[cloud_user@ip-10-0-1-10 ~]$ htop
+
+-bash: /usr/bin/htop: No such file or directory
+
+[cloud_user@ip-10-0-1-10 ~]$ 
+
+
+
+
+# Installing a DEB Package
+
+
+cloud_user@ip-10-0-1-10:~$ pwd
+
+/home/cloud_user
+
+cloud_user@ip-10-0-1-10:~$ cat /etc/issue
+
+Ubuntu 16.04.5 LTS \n \l
+
+cloud_user@ip-10-0-1-10:~$ ls
+
+Desktop  Documents  Downloads  htop_2.0.2-1_amd64.deb  Music  Pictures  Public  Templates  Videos
+
+cloud_user@ip-10-0-1-10:~$ sudo dpkg -i htop_2.0.2-1_amd64.deb 
+
+[sudo] password for cloud_user: 
+
+Selecting previously unselected package htop.
+(Reading database ... 159983 files and directories currently installed.)
+Preparing to unpack htop_2.0.2-1_amd64.deb ...
+Unpacking htop (2.0.2-1) ...
+Setting up htop (2.0.2-1) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu5.2) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Processing triggers for man-db (2.7.5-1) ...
+
+
+cloud_user@ip-10-0-1-10:~$ htop
+
+hit "q" to come out
+
+cloud_user@ip-10-0-1-10:~$ sudo dpkg --remove htop
+
+(Reading database ... 159993 files and directories currently installed.)
+Removing htop (2.0.2-1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu5.2) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+
+cloud_user@ip-10-0-1-10:~$ htop
+
+The program 'htop' is currently not installed. You can install it by typing:
+sudo apt install htop
+
+
+# Compiling from Source in Red Hat/ CentOS
+
+[cloud_user@ip-10-0-1-10 ~]$ pwd
+
+/home/cloud_user
+
+[cloud_user@ip-10-0-1-10 ~]$ ls
+
+htop-2.2.0.tar.gz
+
+[cloud_user@ip-10-0-1-10 ~]$ tar xzf htop-2.2.0.tar.gz   (extract the zip file)
+
+[cloud_user@ip-10-0-1-10 ~]$ ls
+
+htop-2.2.0  htop-2.2.0.tar.gz
+
+
+[cloud_user@ip-10-0-1-10 ~]$ cd htop-2.2.0
+
+[cloud_user@ip-10-0-1-10 htop-2.2.0]$ ls
+
+
+[cloud_user@ip-10-0-1-10 htop-2.2.0]$ ./configure
+
+
+[cloud_user@ip-10-0-1-10 htop-2.2.0]$ ./configure   (TO configure)
+
+
+[cloud_user@ip-10-0-1-10 htop-2.2.0]$ make   (to compile the source code into binaries)
+
+
+[cloud_user@ip-10-0-1-10 htop-2.2.0]$ sudo make install
+
+[sudo] password for cloud_user:
+
+
+
+[cloud_user@ip-10-0-1-10 htop-2.2.0]$ htop
+
+press "q" to come out
+
+
+cloud_user@ip-10-0-1-10 htop-2.2.0]$ cd
+
+
+can run "htop" from any directory
+
+[cloud_user@ip-10-0-1-10 ~]$ htop
+
+
+
+[cloud_user@ip-10-0-1-10 ~]$ cd htop-2.2.0
+
+[cloud_user@ip-10-0-1-10 htop-2.2.0]$ sudo make uninstall
+
+[sudo] password for cloud_user: 
+
+( cd '/usr/local/share/applications' && rm -f htop.desktop )
+ ( cd '/usr/local/bin' && rm -f htop )
+ ( cd '/usr/local/share/man/man1' && rm -f htop.1 )
+ ( cd '/usr/local/share/pixmaps' && rm -f htop.png )
+
+
+[cloud_user@ip-10-0-1-10 htop-2.2.0]$ htop
+
+-bash: /usr/local/bin/htop: No such file or directory
+
+
+[cloud_user@ip-10-0-1-10 htop-2.2.0]$
+
+
+
+
+
+
+
+
 
 
 
