@@ -240,6 +240,32 @@ can run "htop" from any directory
 [cloud_user@ip-10-0-1-10 htop-2.2.0]$
 
 
+# Determining Which Distribution Is Running on a Host
+
+
+- view the release files 
+
+$ cat /etc/*release*
+
+
+-  view the issue files
+
+$ cat /etc/*issue*
+
+
+- Run a Utility to Determine the Linux Distribution
+
+$ lsb_release -a
+
+
+
+- host details
+
+$ hostnamectl
+
+# --------------------------------------------------------------------
+
+
 
 
 
