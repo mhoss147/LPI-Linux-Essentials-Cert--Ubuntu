@@ -289,9 +289,36 @@ $ hostnamectl
   $ ll
   
   
+- declare some variables
+  
+[cloud_user@sorowar0072c ~]$ var1="Some value"
+
+[cloud_user@sorowar0072c ~]$ echo $var1
+
+Some value
+
+
+- home directory
+
+[cloud_user@sorowar0072c ~]$ $HOME
+
+-bash: /home/cloud_user: Is a directory
   
   
   
+ - PRIMARY prompt string
+ 
+ [cloud_user@sorowar0072c ~]$ echo $PS1
+ 
+ 
+ - A colon seperated list of directories where the shell looks for commands
+ 
+ [cloud_user@sorowar0072c ~]$ $PATH
+ 
+ 
+ 
+ 
+ 
   
 
 
