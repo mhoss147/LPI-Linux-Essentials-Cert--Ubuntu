@@ -265,7 +265,34 @@ $ hostnamectl
 
 # --------------------------------------------------------------------
 
+~ means home directory
 
+
+($) means the current user is unprivileged and the inerterface is ready for input
+
+
+(#) means root user, with all privileges
+
+
+ - long listing, human readable
+ 
+ $ ls -lh
+
+
+ - all, long listing, size, human readable
+ 
+  $ ls -alsh
+  
+  
+  - alias
+  
+  $ ll
+  
+  
+  
+  
+  
+  
 
 
 
