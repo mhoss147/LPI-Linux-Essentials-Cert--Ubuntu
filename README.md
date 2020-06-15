@@ -351,6 +351,19 @@ unzip .\"Pillow-5.4.1-cp37-cp37m-manylinux1_x86_64.whl"
 
 - (zip PIL and lambda_handler.py and put in lambda.zip)
 
+- (COMMAND:-
+
+$ZIPFile = @{
+   Path= "E:\SourceLocationOfYourFolder\PIL", "E:\SourceLocationOfYourFile\lambda_handler.py"
+   CompressionLevel = "Fastest"     
+   DestinationPath = "E:\DestinationLocationForYourZip\lambda.zip"
+  }
+   Compress-Archive @ZIPFile
+   
+   
+)   
+   
+
 $ZIPFile = @{Path= ".\PIL", ".\lambda_handler.py"
    CompressionLevel = "Fastest"
    DestinationPath = ".\lambda.zip"
