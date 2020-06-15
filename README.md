@@ -349,9 +349,19 @@ wget "https://files.pythonhosted.org/packages/ae/2a/0a0ab2833e5270664fb5fae59071
 
 unzip .\"Pillow-5.4.1-cp37-cp37m-manylinux1_x86_64.whl"
 
+- (zip PIL and lambda_handler.py and put in lambda.zip)
+
+$ZIPFile = @{Path= ".\PIL", ".\lambda_handler.py"
+   CompressionLevel = "Fastest"
+   DestinationPath = ".\lambda.zip"
+   }
+   Compress-Archive @ZIPFile
+   
+
+- OR  (zip PIL and lambda_handler.py using GUI and put in lambda.zip)
+
 rm -rf Pillow-5.4.1.dist-info
 
-- (zip PIL and lambda_handler.py using GUI and put in lambda.zip)
 
  
  
