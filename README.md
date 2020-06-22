@@ -258,6 +258,10 @@ $ cat /etc/*issue*
 $ lsb_release -a
 
 
+- host name
+
+$ hostname
+
 
 - host details
 
