@@ -380,6 +380,20 @@ $ZIPFile = @{Path= ".\PIL", ".\lambda_handler.py"
 rm -rf Pillow-5.4.1.dist-info
 
 
+
+
+
+
+
+
+
+
+
+References: 
+
+https://linuxacademy.com
+
+
  
  
   
